@@ -1,0 +1,12 @@
+.dropdown {
+  &__container {
+    position: 'relative';
+    width: '300px';
+    display: flex;
+    flex-direction: row;
+  }
+  &__button {
+    width: 100%;
+    padding: 8px;
+  }
+}

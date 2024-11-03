@@ -1,4 +1,4 @@
-import SearchBar from '../shared/search_bar'
+import SearchBar from '../shared/searchbar/SearchBar.jsx'
 export default function HeaderAmazon() {
   return (
     <div className="container__header">
