@@ -32,5 +32,14 @@ export default function DropDown() {
   //   }
   // }
 
-  return <div className="dropdown__container"></div>
+  return (
+    <div className="dropdown__container">
+      <button className="dorpdown__button" type="text">
+        catégories
+      </button>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+  )
 }
