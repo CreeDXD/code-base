@@ -1,7 +1,24 @@
 export function Header() {
   return (
     <div className="container__header">
-      <h1>Header</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home" className="logo_name">
+              JCN Club Informatique
+            </a>
+          </li>
+          <li>
+            <a href="#services">Materiel</a>
+          </li>
+          <li>
+            <a href="#about">Cours</a>
+          </li>
+          <li>
+            <a href="#contact"> Réparation</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   )
 }
