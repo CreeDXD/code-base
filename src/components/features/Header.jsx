@@ -9,7 +9,7 @@ export function Header() {
             </a>
           </li>
           <li>
-            <a href="#services">Materiel</a>
+            <a href="#services">Matériel</a>
           </li>
           <li>
             <a href="#about">Cours</a>
