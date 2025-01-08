@@ -1,5 +1,6 @@
 import logo from '../../assets/icons8-pi-100.png'
 import Card from './Card'
+import Carrousel from '../shared/caroussel/Carrousel'
 export function Main() {
   return (
     <div className="container__main">
@@ -26,6 +27,7 @@ export function Main() {
           imageUrl={logo}
         />
       </a>
+      <Carrousel />
     </div>
   )
 }
