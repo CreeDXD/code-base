@@ -54,6 +54,9 @@ body {
   &__main {
     background-color: green;
     flex: 1;
+    a {
+      text-decoration: none;
+    }
 
     &__logo {
       margin-top: -37px;
@@ -67,6 +70,7 @@ body {
     background-color: yellow;
   }
 }
+
 .card {
   background-color: white;
   border-radius: 8px;
@@ -76,10 +80,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  transition:
+    box-shadow 0.3s,
+    transform 0.3s;
   &__title {
     font-size: 1.5rem;
     margin-bottom: 8px;
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: #333;
   }
 
   &__content {
@@ -87,26 +98,6 @@ body {
     color: #333;
   }
 
-  &__actions {
-    margin-top: 16px;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-
-    button {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      padding: 8px 16px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: #0056b3;
-      }
-    }
-  }
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: translateY(-4px);
@@ -115,7 +106,7 @@ body {
       box-shadow 0.3s;
   }
 }
-.carroussel {
+.carrousel {
   display: flex;
   overflow: hidden;
   position: relative;

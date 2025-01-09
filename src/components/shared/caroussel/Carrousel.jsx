@@ -19,7 +19,10 @@ const Carrousel = ({ images }) => {
         Previous
       </button>
       <div className="carrousel-slide">
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
+        <img
+          src={images[currentIndex].imageUrl}
+          alt={images[currentIndex].altText}
+        />
       </div>
       <button onClick={nextSlide} className="carrousel-button next">
         Next
