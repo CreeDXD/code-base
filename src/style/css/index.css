@@ -48,7 +48,7 @@ body {
   text-decoration: none;
 }
 .container__main {
-  background-color: green;
+  background-color: rgba(192, 192, 192, 0.8);
   flex: 1;
 }
 .container__main a {
@@ -62,7 +62,7 @@ body {
   height: 100%;
 }
 .container__footer {
-  background-color: yellow;
+  background-color: rgba(128, 128, 128, 0.8);
 }
 
 .card {
@@ -72,9 +72,20 @@ body {
   padding: 16px;
   margin: 16px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: left;
   transition: box-shadow 0.3s, transform 0.3s;
+}
+.card__image {
+  height: 200px;
+  width: 200px;
+  padding: 8px;
+  margin-right: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  object-fit: scale-down;
 }
 .card__title {
   font-size: 1.5rem;

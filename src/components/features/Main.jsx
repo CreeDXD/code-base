@@ -1,32 +1,32 @@
 import logo from '../../assets/icons8-pi-100.png'
 import Card from './Card'
 import Carrousel from '../shared/caroussel/Carrousel'
-import carouselData from '../../data/data'
+import carrouselData from '../../data/data'
 
 export function Main() {
   return (
     <div className="container__main">
-      <h1>Main</h1>
+      {/* <h1>Main</h1> */}
 
       <Card
-        title="Card title"
-        description="Card description"
-        imageUrl={logo}
+        title="Matériel"
+        description={carrouselData[0].altText}
+        imageUrl={carrouselData[0].imageUrl}
         link="/page3"
       />
       <Card
-        title="Card title"
-        description="Card description"
-        imageUrl={logo}
+        title="Cours"
+        description={carrouselData[1].altText}
+        imageUrl={carrouselData[1].imageUrl}
         link="/page4"
       />
       <Card
-        title="Card title"
-        description="Card description"
-        imageUrl={logo}
+        title="Réparation"
+        description={carrouselData[2].altText}
+        imageUrl={carrouselData[2].imageUrl}
         link="/page5"
       />
-      <Carrousel images={carouselData} />
+      {/* <Carrousel images={carouselData} /> */}
     </div>
   )
 }
