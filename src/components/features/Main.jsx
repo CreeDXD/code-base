@@ -2,6 +2,7 @@ import logo from '../../assets/icons8-pi-100.png'
 import Card from './Card'
 import Carrousel from '../shared/caroussel/Carrousel'
 import carrouselData from '../../data/data'
+import Materiel from '../features/Materiel'
 
 export function Main() {
   return (
@@ -26,6 +27,7 @@ export function Main() {
         imageUrl={carrouselData[2].imageUrl}
         link="/page5"
       />
+      <Materiel />
       {/* <Carrousel images={carouselData} /> */}
     </div>
   )
