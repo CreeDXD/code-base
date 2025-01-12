@@ -173,26 +173,25 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 16px;
+  button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:
+      background-color 0.3s,
+      transform 0.3s;
 
-  h1 {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-    color: #333;
-  }
+    &:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
 
-  &__list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-
-    li {
-      padding: 8px;
-      border-bottom: 1px solid #ddd;
-
-      &:last-child {
-        border-bottom: none;
-      }
+    &:active {
+      background-color: #004494;
     }
   }
 }

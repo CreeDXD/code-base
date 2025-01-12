@@ -155,23 +155,22 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 16px;
 }
-.container__materiel h1 {
-  font-size: 1.5rem;
-  margin-bottom: 8px;
-  color: #333;
+.container__materiel button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
-.container__materiel__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
+.container__materiel button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
-.container__materiel__list li {
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-}
-.container__materiel__list li:last-child {
-  border-bottom: none;
+.container__materiel button:active {
+  background-color: #004494;
 }
 
 /*# sourceMappingURL=index.css.map */
