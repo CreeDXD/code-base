@@ -3,6 +3,8 @@ import Card from './Card'
 import Carrousel from '../shared/caroussel/Carrousel'
 import carrouselData from '../../data/data'
 import Materiel from '../features/Materiel'
+import Cours from '../features/Cours'
+import Reparation from '../features/Reparation'
 
 export function Main() {
   return (
@@ -28,6 +30,8 @@ export function Main() {
         link="/page5"
       />
       <Materiel />
+      <Cours />
+      <Reparation />
       {/* <Carrousel images={carouselData} /> */}
     </div>
   )

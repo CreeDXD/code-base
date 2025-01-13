@@ -1,0 +1,10 @@
+.dropdown__container {
+  position: "relative";
+  width: "300px";
+  display: flex;
+  flex-direction: row;
+}
+.dropdown__button {
+  width: 100%;
+  padding: 8px;
+}/*# sourceMappingURL=DropDown.css.map */
