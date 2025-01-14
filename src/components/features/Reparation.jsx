@@ -1,8 +1,11 @@
 const Reparation = () => {
   return (
     <div className="container__reparation call-to-action">
-      <h1>Welcome to Our Service</h1>
-      <p>Discover the best solutions for your needs.</p>
+      <h1>Réparation de matériel informatiques</h1>
+      <p>
+        Remplacement de composants, réparation d'ordinateur portable avec
+        substitue si la réparation est sur plusieurs jours
+      </p>
       <button className="">Get Started</button>
     </div>
   )
