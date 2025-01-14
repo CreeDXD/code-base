@@ -9,6 +9,7 @@ const Card = ({ title, description, imageUrl, link }) => {
           <h2 className="card__title">{title}</h2>
           <p className="card__description">{description}</p>
         </div>
+        <button className="">Get Started</button>
       </div>
     </a>
   )

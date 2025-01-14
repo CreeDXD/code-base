@@ -6,7 +6,6 @@ const Reparation = () => {
         Remplacement de composants, réparation d'ordinateur portable avec
         substitue si la réparation est sur plusieurs jours
       </p>
-      <button className="">Get Started</button>
     </div>
   )
 }

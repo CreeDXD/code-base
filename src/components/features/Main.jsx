@@ -1,4 +1,3 @@
-import logo from '../../assets/icons8-pi-100.png'
 import Card from './Card'
 import Carrousel from '../shared/caroussel/Carrousel'
 import carrouselData from '../../data/data'

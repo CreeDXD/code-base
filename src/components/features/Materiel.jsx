@@ -6,7 +6,6 @@ const Materiel = () => {
         Tout le matériel nécaissaire pour votre bureautique (écran, composants,
         tour, clavier, ordinateur portable...){' '}
       </p>
-      <button className="">Get Started</button>
     </div>
   )
 }
