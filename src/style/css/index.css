@@ -25,6 +25,10 @@ body {
 }
 .container__header {
   background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 .container__header ul {
   list-style-type: none;
@@ -46,6 +50,21 @@ body {
 }
 .container__header a {
   text-decoration: none;
+}
+.container__main {
+  background-color: rgba(192, 192, 192, 0.8);
+  flex: 1;
+  padding-top: 80px;
+}
+.container__main a {
+  text-decoration: none;
+}
+.container__main__logo {
+  margin-top: -37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .container__main {
   background-color: rgba(192, 192, 192, 0.8);
