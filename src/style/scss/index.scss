@@ -89,6 +89,23 @@ body {
   }
   &__footer {
     background-color: rgba(128, 128, 128, 0.8);
+    padding: 16px;
+    text-align: center;
+    h1 {
+      margin-bottom: 16px;
+    }
+    .footer__contact {
+      p {
+        margin: 0;
+        a {
+          color: #007bff;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
   }
 }
 
