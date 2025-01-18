@@ -1,8 +1,9 @@
 import image1 from '../assets/image1.png'
 import image2 from '../assets/image2.png'
 import image3 from '../assets/image3.png'
-import image4 from '../assets/image4.png'
-import image5 from '../assets/image5.png'
+import image4 from '../assets/image4.jpg'
+import image5 from '../assets/image5.jpg'
+import image6 from '../assets/image6.jpg'
 
 const articles = [
   {
@@ -24,7 +25,7 @@ const articles = [
     title: 'Monitor',
     description: '4K Ultra HD monitor',
     price: 300,
-    image: image3,
+    image: image6,
   },
   {
     id: 3,
@@ -45,7 +46,7 @@ const articles = [
     title: 'Printer',
     description: 'All-in-one printer with scanning and copying',
     price: 200,
-    image: image3,
+    image: image6,
   },
   {
     id: 6,
@@ -66,7 +67,7 @@ const articles = [
     title: 'Webcam',
     description: 'HD webcam for video conferencing',
     price: 60,
-    image: image3,
+    image: image6,
   },
   {
     id: 9,
@@ -87,7 +88,7 @@ const articles = [
     title: 'Graphics Card',
     description: 'High-end graphics card for gaming',
     price: 500,
-    image: image3,
+    image: image6,
   },
   {
     id: 12,
@@ -108,7 +109,7 @@ const articles = [
     title: 'Power Supply',
     description: '750W power supply for desktop',
     price: 90,
-    image: image3,
+    image: image6,
   },
 ]
 const carrouselData = [
@@ -129,5 +130,6 @@ const carrouselData = [
   },
   // Add more images as needed
 ]
+export { carrouselData }
 
 export default articles
