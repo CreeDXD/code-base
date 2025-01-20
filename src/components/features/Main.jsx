@@ -4,7 +4,6 @@ import { carrouselData } from '../../data/data'
 import Materiel from '../features/Materiel'
 import Cours from '../features/Cours'
 import Reparation from '../features/Reparation'
-import BurgerSection from '../features/Burger_Section'
 
 export function Main() {
   return (
@@ -32,7 +31,6 @@ export function Main() {
       <Materiel />
       <Cours />
       <Reparation />
-      <BurgerSection />
       {/* <Carrousel images={carouselData} /> */}
     </div>
   )

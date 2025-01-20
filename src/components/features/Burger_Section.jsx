@@ -14,7 +14,6 @@ const BurgerSection = () => {
       </button>
       {isOpen && (
         <div className="burger-section__content open">
-          <h2 className="burger-section__title">Burger Menu</h2>
           <ul>
             <li>Item 1</li>
             <li>Item 2</li>

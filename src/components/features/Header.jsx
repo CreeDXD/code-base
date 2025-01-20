@@ -1,3 +1,5 @@
+import BurgerSection from '../features/Burger_Section'
+
 export function Header() {
   return (
     <div className="container__header">
@@ -16,6 +18,9 @@ export function Header() {
           </li>
           <li>
             <a href="#contact"> Réparation</a>
+          </li>
+          <li>
+            <BurgerSection />
           </li>
         </ul>
       </nav>
