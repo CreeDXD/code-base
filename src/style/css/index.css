@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880");
 * {
   margin-block-start: 0;
@@ -240,60 +239,53 @@ body {
   margin: 16px;
 }
 
-.container__header .burger-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  background-color: #fff;
-  border-radius: 8px;
-  top: 50px;
+.burger-section {
   position: relative;
-  margin: 16px;
-  z-index: 1001;
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  max-height: 300px;
 }
-.container__header .burger-section ul {
+.burger-section__button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.burger-section__button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+.burger-section__button:active {
+  background-color: #004494;
+}
+.burger-section__content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  display: none;
+}
+.burger-section__content.open {
+  display: block;
+  height: 350px;
+}
+.burger-section__content ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 100%;
 }
-.container__header .burger-section ul li {
-  width: 100%;
+.burger-section__content ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
 }
-.container__header .burger-section ul li a {
-  display: block;
-  width: 100%;
-  padding: 8px 16px;
-  color: black;
-  text-decoration: none;
-}
-.container__header .burger-section ul li a:hover {
-  background-color: #f0f0f0;
-}
-.container__header .burger-section__button {
-  background-color: transparent;
-  border: none;
-  color: #007bff;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-.container__header .burger-section__button:hover {
-  transform: scale(1.1);
-}
-.container__header .burger-section__button:before {
-  content: "✕";
-}
-.container__header .burger-section:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transform: translateY(-4px);
+.burger-section__content ul li:last-child {
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=index.css.map */
