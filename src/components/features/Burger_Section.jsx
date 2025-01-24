@@ -13,7 +13,7 @@ const BurgerSection = () => {
         {isOpen ? 'Close Menu' : 'Open Menu'}
       </button>
       {isOpen && (
-        <div className="burger-section__content open">
+        <div className="burger-section__content">
           <ul>
             <li>Item 1</li>
             <li>Item 2</li>

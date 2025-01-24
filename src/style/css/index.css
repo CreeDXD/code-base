@@ -240,7 +240,18 @@ body {
 }
 
 .burger-section {
-  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.burger-section ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 50%;
+  right: 0;
 }
 .burger-section__button {
   background-color: #007bff;
@@ -260,32 +271,17 @@ body {
   background-color: #004494;
 }
 .burger-section__content {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  height: 80%;
+  width: 100%;
+  top: 10%;
+  right: 0;
+  background-color: rgba(128, 128, 128, 0.8);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 16px;
-  display: none;
-}
-.burger-section__content.open {
-  display: block;
-  height: 350px;
-}
-.burger-section__content ul {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.burger-section__content ul li {
-  padding: 8px 0;
-  border-bottom: 1px solid #ddd;
-}
-.burger-section__content ul li:last-child {
-  border-bottom: none;
 }
 
 /*# sourceMappingURL=index.css.map */
