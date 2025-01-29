@@ -278,8 +278,8 @@ body {
   justify-content: end;
   position: fixed;
   height: 86.5%;
+  margin-top: 1.7%;
   width: 100%;
-  top: 10%;
   right: 0;
   background-color: rgba(128, 128, 128, 0.8);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
