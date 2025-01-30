@@ -66,20 +66,6 @@ body {
   align-items: center;
   height: 100%;
 }
-.container__main {
-  background-color: rgba(192, 192, 192, 0.8);
-  flex: 1;
-}
-.container__main a {
-  text-decoration: none;
-}
-.container__main__logo {
-  margin-top: -37px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
 .container__footer {
   background-color: rgba(128, 128, 128, 0.8);
   padding: 16px;

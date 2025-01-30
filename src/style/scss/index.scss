@@ -73,21 +73,7 @@ body {
       height: 100%;
     }
   }
-  &__main {
-    background-color: rgba(192, 192, 192, 0.8);
-    flex: 1;
-    a {
-      text-decoration: none;
-    }
-
-    &__logo {
-      margin-top: -37px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
-  }
+  
   &__footer {
     background-color: rgba(128, 128, 128, 0.8);
     padding: 16px;

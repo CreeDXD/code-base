@@ -1,6 +1,6 @@
 const Reparation = () => {
   return (
-    <div className="call-to-action">
+    <div id="reparation" className="call-to-action">
       <h1>Réparation de matériel informatiques</h1>
       <p>
         Remplacement de composants, réparation d'ordinateur portable avec

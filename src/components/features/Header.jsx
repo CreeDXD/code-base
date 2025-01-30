@@ -11,13 +11,13 @@ export function Header() {
             </a>
           </li>
           <li>
-            <a href="#services">Matériel</a>
+            <a href="#materiel">Matériel</a>
           </li>
           <li>
-            <a href="#about">Cours</a>
+            <a href="#cours">Cours</a>
           </li>
           <li>
-            <a href="#contact"> Réparation</a>
+            <a href="#reparation"> Réparation</a>
           </li>
           <li>
             <BurgerSection />

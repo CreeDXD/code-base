@@ -7,26 +7,26 @@ import Reparation from '../features/Reparation'
 
 export function Main() {
   return (
-    <div className="container__main">
+    <div id='home' className="container__main">
       {/* <h1>Main</h1> */}
 
       <Card
         title="Matériel"
         description={carrouselData[0].altText}
         imageUrl={carrouselData[0].imageUrl}
-        link="/page3"
+        link="#materiel"
       />
       <Card
         title="Cours"
         description={carrouselData[1].altText}
         imageUrl={carrouselData[1].imageUrl}
-        link="/page4"
+        link="#cours"
       />
       <Card
         title="Réparation"
         description={carrouselData[2].altText}
         imageUrl={carrouselData[2].imageUrl}
-        link="/page5"
+        link="#reparation"
       />
       <Materiel />
       <Cours />
