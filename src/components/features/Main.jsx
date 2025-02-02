@@ -6,6 +6,7 @@ import Cours from '../features/Cours'
 import Reparation from '../features/Reparation'
 
 export function Main() {
+  console.log(document.getElementById('materiel'))
   return (
     <div id='home' className="container__main">
       {/* <h1>Main</h1> */}
@@ -28,6 +29,7 @@ export function Main() {
         imageUrl={carrouselData[2].imageUrl}
         link="#reparation"
       />
+
       <Materiel />
       <Cours />
       <Reparation />

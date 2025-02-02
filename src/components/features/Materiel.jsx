@@ -22,9 +22,8 @@ const Materiel = () => {
       .then((module) => setArticles(module.default))
       .catch((error) => console.error('Error loading data:', error))
   }, [])
-
   return (
-    <div id='materiel' className="container__materiel call-to-action">
+    <div id='materiel' className="container__materiel call-to-action" >
       <h1>Vente de matériels informatiques</h1>
       <p>
         Tout le matériel nécaissaire pour votre bureautique (écran, composants,
