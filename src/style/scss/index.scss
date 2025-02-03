@@ -60,20 +60,12 @@ body {
   &__main {
     background-color: rgba(192, 192, 192, 0.8);
     flex: 1;
-    padding-top: 80px; // Add padding to create space below the header
+    padding-top: 6%; // Add padding to create space below the header
     a {
       text-decoration: none;
     }
-
-    &__logo {
-      margin-top: -37px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
   }
-  
+
   &__footer {
     background-color: rgba(128, 128, 128, 0.8);
     padding: 16px;
@@ -97,6 +89,7 @@ body {
 }
 
 .card {
+  height: 24vh;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -105,18 +98,17 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: left;
+  justify-content: flex-start;
+  cursor: pointer;
   transition:
     box-shadow 0.3s,
     transform 0.3s;
+
   &__image {
-    height: 200px;
-    width: 200px;
+    height: 100%;
     padding: 8px;
-    margin-right: 200px;
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 16px;
     object-fit: scale-down;
   }
 
@@ -131,10 +123,14 @@ body {
   }
 
   &__content {
+    width: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-size: 1rem;
     color: #333;
   }
   button {
+    margin-left: auto;
     background-color: #007bff;
     border: none;
     color: white;
@@ -144,8 +140,6 @@ body {
     margin-top: 30px;
     cursor: pointer;
     order: 1;
-    margin-left: auto;
-    margin-right: 200px;
     transition:
       background-color 0.3s,
       transform 0.3s;
@@ -168,51 +162,6 @@ body {
       box-shadow 0.3s;
   }
 }
-// .carrousel {
-//   display: flex;
-//   overflow: hidden;
-//   position: relative;
-//   width: 100%;
-//   height: 300px;
-
-//   &__track {
-//     display: flex;
-//     transition: transform 0.5s ease;
-//   }
-
-//   &__slide {
-//     min-width: 100%;
-//     transition: transform 0.5s ease;
-
-//     img {
-//       width: 100%;
-//       height: 100%;
-//       object-fit: cover;
-//     }
-//   }
-
-//   &__nav {
-//     position: absolute;
-//     top: 50%;
-//     width: 100%;
-//     display: flex;
-//     justify-content: space-between;
-//     transform: translateY(-50%);
-
-//     button {
-//       background-color: rgba(0, 0, 0, 0.5);
-//       border: none;
-//       color: white;
-//       cursor: pointer;
-//       padding: 8px;
-//       transition: background-color 0.3s;
-
-//       &:hover {
-//         background-color: rgba(0, 0, 0, 0.7);
-//       }
-//     }
-//   }
-// }
 
 .call-to-action {
   display: flex;
@@ -311,6 +260,7 @@ body {
 .burger-section {
   height: 100%;
   width: 100%;
+
   ul {
     display: flex;
     flex-direction: column;
@@ -349,7 +299,7 @@ body {
     justify-content: end;
     position: fixed;
     height: 86.5%;
-    margin-top:1.7%;
+    margin-top: 1.7%;
     width: 100%;
     right: 0;
     background-color: rgba(128, 128, 128, 0.8);
@@ -358,3 +308,49 @@ body {
     padding: 16px;
   }
 }
+
+// .carrousel {
+//   display: flex;
+//   overflow: hidden;
+//   position: relative;
+//   width: 100%;
+//   height: 300px;
+
+//   &__track {
+//     display: flex;
+//     transition: transform 0.5s ease;
+//   }
+
+//   &__slide {
+//     min-width: 100%;
+//     transition: transform 0.5s ease;
+
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//     }
+//   }
+
+//   &__nav {
+//     position: absolute;
+//     top: 50%;
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     transform: translateY(-50%);
+
+//     button {
+//       background-color: rgba(0, 0, 0, 0.5);
+//       border: none;
+//       color: white;
+//       cursor: pointer;
+//       padding: 8px;
+//       transition: background-color 0.3s;
+
+//       &:hover {
+//         background-color: rgba(0, 0, 0, 0.7);
+//       }
+//     }
+//   }
+// }
