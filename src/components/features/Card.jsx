@@ -5,16 +5,15 @@ const Card = ({ title, description, imageUrl, link }) => {
     document.getElementById(link).scrollIntoView({ behavior: 'smooth' })
   }
   return (
-    
-      <div className="card" onClick={smoothScroll} >
-        <img src={imageUrl} alt={title} className="card__image" />
-        <div className="card__content">
-          <h2 className="card__title">{title}</h2>
-          <p className="card__description">{description}</p>
-        </div>
-        
-        <button  className="">Get Started</button>
+    <div className="card" onClick={smoothScroll}>
+      <img src={imageUrl} alt={title} className="card__image" />
+      <div className="card__content">
+        <h2 className="card__title">{title}</h2>
+        <p className="card__description">{description}</p>
       </div>
+
+      <button className="">Découvrire</button>
+    </div>
   )
 }
 

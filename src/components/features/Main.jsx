@@ -4,6 +4,8 @@ import { carrouselData } from '../../data/data'
 import Materiel from '../features/Materiel'
 import Cours from '../features/Cours'
 import Reparation from '../features/Reparation'
+import TransitionSection from './Transition_Section'
+
 export function Main() {
   return (
     <div id="home" className="container__main">
@@ -30,6 +32,7 @@ export function Main() {
       </div>
 
       <Materiel />
+      <TransitionSection />
       <Cours />
       <Reparation />
       {/* <Carrousel images={carouselData} /> */}

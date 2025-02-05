@@ -103,7 +103,7 @@ body {
 .card__image {
   height: 100%;
   padding: 8px;
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
   object-fit: scale-down;
 }
@@ -116,14 +116,17 @@ body {
   color: #333;
 }
 .card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 20%;
   margin-left: 20%;
   margin-right: 20%;
   font-size: 1rem;
   color: #333;
+  flex-grow: 3;
 }
 .card button {
-  margin-left: 10%;
   background-color: #007bff;
   border: none;
   color: white;
@@ -273,6 +276,56 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 16px;
+}
+
+.transition__section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.transition__section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+.transition__section p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+.transition__section--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.transition__section--image {
+  height: 50%;
+  width: 25%;
+  object-fit: cover;
+  border: 2px solid #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  border-radius: 20px;
+  transform-origin: center;
+  position: absolute;
+  top: 30%;
+  transition: transform 0.5s ease;
+}
+.transition__section--image1 {
+  left: -2%;
+  transform: rotate(10deg);
+}
+.transition__section--image2 {
+  right: -2%;
+  transform: rotate(-10deg);
 }
 
 /*# sourceMappingURL=index.css.map */
