@@ -30,9 +30,9 @@ export function Main() {
           link="reparation"
         />
       </div>
+      <TransitionSection />
 
       <Materiel />
-      <TransitionSection />
       <Cours />
       <Reparation />
       {/* <Carrousel images={carouselData} /> */}

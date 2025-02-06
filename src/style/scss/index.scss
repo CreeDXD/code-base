@@ -24,7 +24,7 @@ body {
     margin: auto;
   }
   &__header {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     position: fixed;
     width: 100%;
     height: 80px;
@@ -59,7 +59,7 @@ body {
   }
 
   &__main {
-    background-color: rgba(192, 192, 192, 0.8);
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
     flex: 1;
     padding-top: 3%; // Add padding to create space below the header
     a {
@@ -88,6 +88,7 @@ body {
     }
   }
 }
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -97,7 +98,7 @@ body {
 
 .card {
   height: 18vh;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 16px;
@@ -141,7 +142,7 @@ body {
     flex-grow: 3;
   }
   button {
-    background-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.8);
     border: none;
     color: white;
     padding: 10px 20px;
@@ -177,7 +178,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  background-color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 16px;
@@ -327,52 +328,6 @@ body {
   }
 }
 
-// .transition__section {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: center;
-//   height: 70vh;
-
-//   h1 {
-//     font-size: 2rem;
-//     margin-bottom: 16px;
-//   }
-//   p {
-//     font-size: 1rem;
-//     margin-bottom: 16px;
-//   }
-//   &--container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: space-around;
-//     height: 50%;
-//     overflow: hidden;
-//     position: relative;
-//   }
-//   &--image {
-//     height: 50%;
-//     width: 50%;
-//     object-fit: cover;
-//     border: 2px solid #007bff;
-//     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-//     border-radius: 20px;
-//     transform-origin: center;
-
-//     &1 {
-//       position: absolute; // Ensures it's positioned relative to container
-//       left: 25%; // Moves it off the screen from the left
-//       transform: translateX(-50%) rotate(20deg);
-//     }
-
-//     &2 {
-//       position: absolute; // Same for the second image
-//       right: 25%; // Moves it off the screen from the right
-//       transform: translateX(50%) rotate(-20deg);
-//     }
-//   }
-// }
 .transition__section {
   display: flex;
   flex-direction: row;
@@ -384,16 +339,20 @@ body {
   width: 100%; // Makes sure it covers the entire width
 
   h2 {
+    color: rgba(255, 255, 255, 0.6); // Darker color for better readability
     font-size: 2rem;
     margin-bottom: 16px;
   }
 
   p {
+    color: rgba(255, 255, 255, 0.6); // Darker color for better readability
     font-size: 1.4rem;
     margin-bottom: 16px;
+    padding: 20px;
   }
 
   &--container {
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -402,21 +361,23 @@ body {
     width: 40%;
     text-align: center;
     position: relative;
-    z-index: 2; // Ensures text is above images
+    border: 2px solid rgba(255, 255, 255, 0.3); // Glass effect border
+    background-color: rgba(255, 255, 255, 0.1); // Glass effect background
+    backdrop-filter: blur(
+      10px
+    ); // Optional: adds a blur effect for a more pronounced glass effect
   }
 
   &--image {
     height: 40%;
     width: 15%;
     object-fit: cover;
-    border: 2px solid #007bff;
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.3); // Glass effect border
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); // Glass effect shadow
     border-radius: 20px;
     transform-origin: center;
     position: absolute; // Allows it to move freely without affecting layout
     top: 30%;
-    transition: transform 0.5s ease;
-
     &1 {
       left: -2%; // Moves it partially off-screen
       transform: rotate(10deg);

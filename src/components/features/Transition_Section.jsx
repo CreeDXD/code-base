@@ -5,6 +5,7 @@ const TransitionSection = () => {
   console.log(articles)
   const image1 = articles.length > 0 ? articles[articles.length - 1].image : ''
   const image2 = articles.length > 1 ? articles[articles.length - 2].image : ''
+  const image3 = articles.length > 2 ? articles[articles.length - 3].image : ''
   return (
     <div className="transition__section">
       <img

@@ -24,7 +24,7 @@ body {
   margin: auto;
 }
 .container__header {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   position: fixed;
   width: 100%;
   height: 80px;
@@ -53,7 +53,7 @@ body {
   text-decoration: none;
 }
 .container__main {
-  background-color: rgba(192, 192, 192, 0.8);
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
   flex: 1;
   padding-top: 3%;
 }
@@ -88,7 +88,7 @@ body {
 
 .card {
   height: 18vh;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 16px;
@@ -127,7 +127,7 @@ body {
   flex-grow: 3;
 }
 .card button {
-  background-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.8);
   border: none;
   color: white;
   padding: 10px 20px;
@@ -155,7 +155,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  background-color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 16px;
@@ -297,14 +297,18 @@ body {
   width: 100%;
 }
 .transition__section h2 {
+  color: rgba(255, 255, 255, 0.6);
   font-size: 2rem;
   margin-bottom: 16px;
 }
 .transition__section p {
+  color: rgba(255, 255, 255, 0.6);
   font-size: 1.4rem;
   margin-bottom: 16px;
+  padding: 20px;
 }
 .transition__section--container {
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -313,19 +317,20 @@ body {
   width: 40%;
   text-align: center;
   position: relative;
-  z-index: 2;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 .transition__section--image {
   height: 40%;
   width: 15%;
   object-fit: cover;
-  border: 2px solid #007bff;
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   transform-origin: center;
   position: absolute;
   top: 30%;
-  transition: transform 0.5s ease;
 }
 .transition__section--image1 {
   left: -2%;
