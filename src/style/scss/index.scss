@@ -183,6 +183,15 @@ body {
   margin: 16px;
   margin-top: 2%;
   scroll-margin-top: 100px;
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
 }
 
 .article-card {
@@ -369,7 +378,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 50vh;
   position: relative;
   overflow: hidden; // Ensures that child elements don't extend beyond this section
   width: 100%; // Makes sure it covers the entire width
@@ -380,7 +389,7 @@ body {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-bottom: 16px;
   }
 
@@ -397,8 +406,8 @@ body {
   }
 
   &--image {
-    height: 50%;
-    width: 25%;
+    height: 40%;
+    width: 15%;
     object-fit: cover;
     border: 2px solid #007bff;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);

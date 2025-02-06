@@ -14,7 +14,7 @@ const TransitionSection = () => {
       />
       <div className="transition__section--container">
         <h2 className="transition__section--title">
-          Regardes les derniers Articles ajoutées{' '}
+          Regardez les derniers articles ajoutées{' '}
         </h2>
         <p className="transition__section--description">
           les derniers ordinateurs portables, smartphones, tablettes et

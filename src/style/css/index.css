@@ -162,6 +162,14 @@ body {
   margin-top: 2%;
   scroll-margin-top: 100px;
 }
+.call-to-action h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+.call-to-action p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
 
 .article-card {
   background-color: white;
@@ -283,7 +291,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 50vh;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -293,7 +301,7 @@ body {
   margin-bottom: 16px;
 }
 .transition__section p {
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-bottom: 16px;
 }
 .transition__section--container {
@@ -308,8 +316,8 @@ body {
   z-index: 2;
 }
 .transition__section--image {
-  height: 50%;
-  width: 25%;
+  height: 40%;
+  width: 15%;
   object-fit: cover;
   border: 2px solid #007bff;
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
