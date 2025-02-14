@@ -12,9 +12,9 @@ export function Header() {
           <li onClick={() => smoothScroll('materiel')}>Matériel</li>
           <li onClick={() => smoothScroll('cours')}>Cours</li>
           <li onClick={() => smoothScroll('reparation')}>Réparation</li>
-          <li>
+          {/* <li>
             <BurgerSection />
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

@@ -13,9 +13,9 @@ const ArticleCard = ({ article }) => {
         <img src={image} alt={title} className="article-card__content__image" />
         <p className="article-card__price">${price}</p>
       </div>
-      <button className="article-card__button" onClick={addToCart}>
+      {/* <button className="article-card__button" onClick={addToCart}>
         Add to Cart
-      </button>
+      </button> */}
     </div>
   )
 }
