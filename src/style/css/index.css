@@ -67,18 +67,28 @@ body {
   padding: 16px;
   text-align: center;
 }
-.container__footer h1 {
+.container__footer--content {
   margin-bottom: 16px;
 }
-.container__footer .footer__contact p {
-  margin: 0;
+.container__footer--content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
 }
-.container__footer .footer__contact p a {
-  color: rgba(102, 204, 255, 0.8);
+.container__footer--content p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.container__footer--content a {
+  color: #fff;
   text-decoration: none;
 }
-.container__footer .footer__contact p a:hover {
+.container__footer--content a:hover {
+  color: #d4b3ff;
   text-decoration: underline;
+}
+.container__footer__bottom {
+  font-size: 0.875rem;
+  color: #fff;
 }
 
 .cards {

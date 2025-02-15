@@ -1,13 +1,25 @@
 export function Footer() {
   return (
-    <div className="container__footer">
-      <h1>Footer</h1>
-      <div className="footer__contact">
+    <footer className="container__footer">
+      <div className="container__footer--content">
+        <h2>Contactez-nous</h2>
         <p>
-          Contact us at:{' '}
-          <a href="mailto:contact@example.com">contact@example.com</a>
+          Vous avez des questions ou besoin d'assistance ? N'hésitez pas à nous
+          contacter :
+        </p>
+        <p>
+          Email : <a href="mailto:contact@example.com">contact@example.com</a>
+        </p>
+        <p>
+          Téléphone : <a href="tel:+123456789">+1 234 567 89</a>
         </p>
       </div>
-    </div>
+      <div className="footer__bottom">
+        <p>
+          &copy; {new Date().getFullYear()} Nom de l'entreprise. Tous droits
+          réservés.
+        </p>
+      </div>
+    </footer>
   )
 }
